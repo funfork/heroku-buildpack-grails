@@ -144,9 +144,9 @@ if [ ! -d server ] ; then
     SERVLET_VERSION=$(get_property $BUILD_DIR/grails-app/conf/BuildConfig.groovy 'grails.servlet.version')
 
     if [ "$SERVLET_VERSION" == '3.0' ]; then
-      JETTY_RUNNER_VERSION=8.1.10.v20130312
+      JETTY_RUNNER_VERSION=8.1.14.v20131031
     else
-      JETTY_RUNNER_VERSION=7.5.4.v20111024
+      JETTY_RUNNER_VERSION=7.6.14.v20131031
     fi
 
     echo "-----> No server directory found. Adding jetty-runner $JETTY_RUNNER_VERSION automatically."
